@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  api:
+    build: ./bank-microservice
+    container_name: bank-api
+    restart: always
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+    env_file:
+      - ./bank-microservice/.env
+
+  frontend:
+    build:
+      context: ./bank-system
+    container_name: next-frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - api
+
+volumes:
+  mongo_data:
