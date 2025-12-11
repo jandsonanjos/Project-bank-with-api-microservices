@@ -1,9 +1,9 @@
 Resumo Completo do Projeto
-🏦 STY Bank - Sistema Bancário com Microserviços
+🏦 JAND Bank - Sistema Bancário com Microserviços
 Um sistema bancário completo com arquitetura de microserviços, frontend moderno em Next.js e backend em Node.js/Express com MongoDB.
 
 📋 Visão Geral
-STY Bank é uma aplicação de banco digital que oferece funcionalidades essenciais como:
+JAND Bank é uma aplicação de banco digital que oferece funcionalidades essenciais como:
 
 ✅ Registro e login de usuários com autenticação JWT
 ✅ Gestão de contas com saldo em tempo real
@@ -59,7 +59,7 @@ projeto-04-12-25/
 ├── bank-system/                # Frontend (Next.js)
 │   ├── app/
 │   │   ├── layout.tsx          # Layout principal
-│   │   ├── page.tsx            # Home page (STY Bank)
+│   │   ├── page.tsx            # Home page (JAND Bank)
 │   │   ├── login/page.tsx      # Autenticação + logout
 │   │   ├── register/page.tsx   # Registro de novo usuário
 │   │   ├── dashboard/page.tsx  # Painel do cliente (saldo, ops)
