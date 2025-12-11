@@ -72,7 +72,7 @@ export default function Dashboard() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">ST</div>
             <div>
-              <div className="text-lg font-semibold text-gray-900 dark:text-white">STY Bank</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">JAND Bank</div>
               <div className="text-sm text-gray-500 dark:text-gray-400">Painel do cliente</div>
             </div>
           </div>
